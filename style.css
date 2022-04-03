@@ -1,3 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Karla:wght@200;300;400;500;600;700;800&display=swap');
 
 /* Fonts: Karla and Inter */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 16, 31);
+}
+
+.card {
+    width: 40%;
+    min-height: 60%;
+    border: white 1px dotted;
+    background-color: rgb(0, 26, 50);
+}
