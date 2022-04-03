@@ -90,7 +90,7 @@ section {
     justify-content: center;
 }
 
-section button {
+section [type="button"] {
     width: 100%;
     min-height: 100%;
     padding: .5rem;
@@ -105,11 +105,11 @@ section button {
     transition: 100ms;
 }
 
-section button:nth-child(4) {
+section [type="button"]:nth-child(4) {
     margin-bottom: 1.5rem;
 }
 
-section button:active {
+section [type="button"]:active {
     color: var(--white);
     background-color: #29a360;
 }
