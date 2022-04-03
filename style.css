@@ -5,7 +5,7 @@
 :root {
     --white: rgb(204, 204, 204);
     --title-green: #4ADF86;
-    --btn-green: #10B981;
+    --btn-green: #118d63;
     --pass-green: #55F991;
 }
 
@@ -35,16 +35,15 @@ body {
 }
 
 header {
-    min-height: 8.35rem;
     border-bottom: rgb(231, 231, 231, .15) 1px solid;
-    margin-bottom: 8.35rem;
+    margin-bottom: 1.7rem;
 }
 
 header h1 {
     color: var(--white);
     font-family: 'Karla', Arial, Helvetica, sans-serif;
     font-weight: 800;
-    font-size: .9rem;
+    font-size: 1.2rem;
     margin-bottom: .2rem;
 }
 
@@ -64,6 +63,7 @@ header button {
     min-height: 2rem;
     padding: .2rem;
     padding-left: .8rem;
+    margin-bottom: 1.7rem;
     /*  */
     display: flex;
     flex-flow: row wrap;
@@ -82,4 +82,39 @@ header button:active {
 
 header button svg {
     margin-right: .7rem;
+}
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+section button {
+    width: 100%;
+    min-height: 100%;
+    padding: .5rem;
+    border-radius: .25rem;
+    margin-bottom: .6rem;
+    /*  */
+    background-color: #15335e;
+    color: var(--pass-green);
+    /*  */
+    font-size: .67rem;
+    /*  */
+    transition: 100ms;
+}
+
+section button:nth-child(4) {
+    margin-bottom: 1.5rem;
+}
+
+section button:active {
+    color: var(--white);
+    background-color: #29a360;
+}
+
+section p {
+    font-size: .5rem;
+    color: var(--white);
 }
