@@ -27,6 +27,7 @@ let secondBtn = document.getElementById("2");
 let thirdBtn = document.getElementById("3");
 let fourthBtn = document.getElementById("4");
 
+onload
 
 function generate() {
     theValue.one = ""

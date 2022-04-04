@@ -101,9 +101,16 @@ section [type="button"] {
     color: var(--pass-green);
     /*  */
     font-size: .67rem;
+    text-align: center;
     /*  */
+    cursor: pointer;
     transition: 100ms;
 }
+
+
+/* section [type="button"]::selection {
+    background-color: transparent;
+} */
 
 section [type="button"]:nth-child(4) {
     margin-bottom: 1.5rem;
