@@ -98,4 +98,4 @@ function completeSet4() {
 }
 
 
-console.log(available)
+// console.log(available)
