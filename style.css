@@ -195,6 +195,18 @@ footer svg {
     }
 }
 
+@media (min-width:505px) {
+    header button {
+        min-height: 2.4rem;
+        width: 10.2rem;
+    }
+    section [type="button"] {
+        flex: 0 0 45%;
+        min-height: 3rem;
+        margin: 0;
+    }
+}
+
 @media (min-width:740px) {
     header h1 {
         font-size: 1.5rem;
@@ -207,7 +219,7 @@ footer svg {
     }
     header button {
         min-height: 2.6rem;
-        width: 40%;
+        width: 12rem;
         font-size: .75rem;
     }
     section {
@@ -215,7 +227,7 @@ footer svg {
         align-items: flex-start;
     }
     section [type="button"] {
-        flex: 0 0 15rem;
+        flex: 0 0 45%;
         min-height: 3rem;
         margin: 0;
         font-size: .8rem;
@@ -285,7 +297,7 @@ footer svg {
     }
     header button {
         min-height: 2.6rem;
-        width: 40%;
+        width: 15rem;
         font-size: .85rem;
     }
     section {
@@ -293,14 +305,15 @@ footer svg {
         align-items: flex-start;
     }
     section [type="button"] {
-        flex: 0 0 15rem;
+        flex: 0 0 45%;
         min-height: 3rem;
         margin: 0;
         font-size: .9rem;
-    }
-    section [type="button"]:nth-child(n+3) {
         margin-bottom: 1.5rem;
     }
+    /* section [type="button"]:nth-child(n+3) {
+        margin-bottom: 1.5rem;
+    } */
     section p {
         font-size: .7rem;
     }
@@ -329,11 +342,11 @@ footer svg {
     }
     @keyframes popup {
         10% {
-            top: 10rem;
+            top: 5%;
             opacity: 1;
         }
         60% {
-            top: 10rem;
+            top: 5%;
             opacity: 1;
         }
         100% {
@@ -347,3 +360,5 @@ footer svg {
         margin-right: .3rem;
     }
 }
+
+@media (min-width:800px) {}
