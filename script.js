@@ -28,6 +28,8 @@ let secondBtn = document.getElementById("2");
 let thirdBtn = document.getElementById("3");
 let fourthBtn = document.getElementById("4");
 
+let popUp = document.getElementById("footer")
+
 onload
 
 function generate() {
@@ -50,23 +52,50 @@ function generate() {
 function copy1() {
     var copyThis = document.getElementById("1")
     navigator.clipboard.writeText(copyThis.value)
+    popUp.classList.add("active");
 }
 
 function copy2() {
     var copyThis = document.getElementById("2")
     navigator.clipboard.writeText(copyThis.value)
+    popUp.classList.add("active");
 }
 
 function copy3() {
     var copyThis = document.getElementById("3")
     navigator.clipboard.writeText(copyThis.value)
+    popUp.classList.add("active");
 }
 
 function copy4() {
     var copyThis = document.getElementById("4")
     navigator.clipboard.writeText(copyThis.value)
+    popUp.classList.add("active");
 }
 
+function removeClass() {
+    popUp.classList.remove("active");
+}
+
+function completeSet1() {
+    copy1()
+    setTimeout(removeClass, 2000);
+}
+
+function completeSet2() {
+    copy2()
+    setTimeout(removeClass, 2000);
+}
+
+function completeSet3() {
+    copy3()
+    setTimeout(removeClass, 2000);
+}
+
+function completeSet4() {
+    copy4()
+    setTimeout(removeClass, 2000);
+}
 
 
 console.log(available)

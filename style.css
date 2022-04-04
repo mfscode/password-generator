@@ -25,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #0c0a29;
+    position: relative;
 }
 
 .card {
@@ -32,6 +33,7 @@ body {
     min-height: 60%;
     padding: 3rem;
     background-color: #0a1d39;
+    border-radius: .3rem;
 }
 
 header {
@@ -124,4 +126,44 @@ section [type="button"]:active {
 section p {
     font-size: .5rem;
     color: var(--white);
+}
+
+footer {
+    width: 100vw;
+    min-height: 4rem;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -100%;
+    /*  */
+    color: var(--white);
+    background-color: var(--btn-green);
+    /*  */
+    font-size: .8rem;
+}
+
+footer.active {
+    animation-name: popup;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes popup {
+    10% {
+        bottom: 0;
+    }
+    60% {
+        bottom: 0;
+    }
+    100% {
+        bottom: -100%;
+    }
+}
+
+footer svg {
+    width: 24px;
+    height: 24px;
+    margin-right: .3rem;
 }

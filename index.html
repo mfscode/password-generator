@@ -20,20 +20,26 @@
             <button onclick="generate()" class="generator">
                 <svg width="13" height="13" viewBox="0 0 50 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M29.6451 0.123719C31.1318 0.474093 32.1429 1.50489 32.1429 2.67031V16.0209L46.4286 16.0209C47.7603 16.0209 48.9813 16.5749 49.5963 17.4579C50.2113 18.341 50.1181 19.4066 49.3544 20.2223L24.3544 46.9235C23.4605 47.8782 21.8416 48.2892 20.3549 47.9388C18.8682 47.5885 17.8571 46.5577 17.8571 45.3922L17.8571 32.0416H3.57144C2.23974 32.0416 1.01865 31.4877 0.403658 30.6046C-0.211334 29.7215 -0.118068 28.6559 0.64561 27.8403L25.6456 1.1391C26.5395 0.184345 28.1584 -0.226655 29.6451 0.123719Z" fill="white"/>
-                </svg>
+                </svg>  
                 Generate passwords
             </button>
         </header>
 
         <section class="output">
-            <input type="button" value="..." id="1" onclick="copy1()" readonly>
-            <input type="button" value="..." id="2" onclick="copy2()" readonly>
-            <input type="button" value="..." id="3" onclick="copy3()" readonly>
-            <input type="button" value="..." id="4" onclick="copy4()" readonly>
+            <input type="button" value="..." id="1" onclick="completeSet1()" readonly>
+            <input type="button" value="..." id="2" onclick="completeSet2()" readonly>
+            <input type="button" value="..." id="3" onclick="completeSet3()" readonly>
+            <input type="button" value="..." id="4" onclick="completeSet4()" readonly>
             <p>Click any box to copy the password to the clipboard</p>
         </section>
     </main>
-    z
+
+    <footer id="footer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
+        <div id="popup">Password copied to the clipboard!</div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
