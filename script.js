@@ -10,14 +10,15 @@ let lowerCase = alphabet.split(" ")
 let upperCase = alphabet.toUpperCase().split(" ")
 let symbols = '!@#$%&<>'
 let symbolsArr = symbols.split(" ")
+let numbers = Array.from(Array(10).keys())
 
-const available = Array.from(lowerCase + upperCase + symbolsArr)
+const available = Array.from(lowerCase + upperCase + symbolsArr + numbers)
 
 let theValue = {
-    one: available[Math.floor(Math.random() * 60)],
-    two: available[Math.floor(Math.random() * 60)],
-    three: available[Math.floor(Math.random() * 60)],
-    four: available[Math.floor(Math.random() * 60)]
+    one: available[Math.floor(Math.random() * 79)],
+    two: available[Math.floor(Math.random() * 79)],
+    three: available[Math.floor(Math.random() * 79)],
+    four: available[Math.floor(Math.random() * 79)]
 }
 
 
@@ -35,10 +36,10 @@ function generate() {
     theValue.three = ""
     theValue.four = ""
     for (let i = 0; i < 8; i++) {
-        theValue.one += available[Math.floor(Math.random() * 60)];
-        theValue.two += available[Math.floor(Math.random() * 60)];
-        theValue.three += available[Math.floor(Math.random() * 60)];
-        theValue.four += available[Math.floor(Math.random() * 60)];
+        theValue.one += available[Math.floor(Math.random() * 79)];
+        theValue.two += available[Math.floor(Math.random() * 79)];
+        theValue.three += available[Math.floor(Math.random() * 79)];
+        theValue.four += available[Math.floor(Math.random() * 79)];
     }
     firstBtn.value = theValue.one;
     secondBtn.value = theValue.two;
@@ -47,12 +48,25 @@ function generate() {
 }
 
 function copy1() {
-    var firstPw = document.getElementById("1")
-    firstPw.select()
-    navigator.clipboard.writeText(firstPw.value)
+    var copyThis = document.getElementById("1")
+    navigator.clipboard.writeText(copyThis.value)
+}
+
+function copy2() {
+    var copyThis = document.getElementById("2")
+    navigator.clipboard.writeText(copyThis.value)
+}
+
+function copy3() {
+    var copyThis = document.getElementById("3")
+    navigator.clipboard.writeText(copyThis.value)
+}
+
+function copy4() {
+    var copyThis = document.getElementById("4")
+    navigator.clipboard.writeText(copyThis.value)
 }
 
 
 
-
-console.log(firstBtn.innerText)
+console.log(available)
