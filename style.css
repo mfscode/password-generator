@@ -76,6 +76,7 @@ header button {
     font-weight: 600;
     color: var(--white);
     border-radius: .25rem;
+    cursor: pointer;
 }
 
 header button:active {
@@ -286,6 +287,9 @@ footer svg {
     .card {
         width: 50%;
     }
+    header {
+        padding-left: 1.2rem;
+    }
     header h1 {
         font-size: 1.8rem;
     }
@@ -299,6 +303,10 @@ footer svg {
         min-height: 2.6rem;
         width: 15rem;
         font-size: .85rem;
+        transition: 150ms;
+    }
+    header button:hover {
+        background-color: #0c6547;
     }
     section {
         min-height: 10rem;
@@ -360,5 +368,3 @@ footer svg {
         margin-right: .3rem;
     }
 }
-
-@media (min-width:800px) {}
